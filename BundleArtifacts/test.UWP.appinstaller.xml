@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller DisplayName="test.UWP" IsBundle="true" Version="1.0.0.0" DisplayPublisher="youpr" SupportedArchitectures="x64" OutputFolder="C:\Users\youpr\Desktop\" Description="test.UWP" MinOS="10.0.19041.0" CertificateUri="file:///C:/test.UWP_1.0.0.0_Debug_Test/test.UWP_1.0.0.0_x64_Debug.cer" PackageUri="file:///C:/test.UWP_1.0.0.0_Debug_Test/test.UWP_1.0.0.0_x64_Debug.msixbundle" AppInstallerFile="file:///C:/test.UWP.appinstaller" LogoPath="C:\Users\youpr\source\repos\test.UWP\test.UWP\Assets\StoreLogo.png" TileColor="transparent" />

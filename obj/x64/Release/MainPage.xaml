@@ -1,0 +1,156 @@
+﻿<Page
+    x:Class="test.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:test.UWP"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground"
+                                  BackgroundSource="HostBackdrop"
+                                  TintColor="#CCFFFFFF"
+                                  TintOpacity="0.6"
+                                  FallbackColor="#F2F2F2"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground"
+                                  BackgroundSource="HostBackdrop"
+                                  TintColor="#CC000000"
+                                  TintOpacity="0.6"
+                                  FallbackColor="#1F1F1F"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <NavigationView x:ConnectionId='2'
+        x:Name="NavView"
+                                         
+                               
+                                             
+        IsBackButtonVisible="Collapsed"
+        IsSettingsVisible="True">
+
+        <NavigationView.MenuItems>
+            <!-- Home -->
+            <NavigationViewItem Content="Home" Tag="home">
+                <NavigationViewItem.Icon>
+                    <SymbolIcon Symbol="Home"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <NavigationViewItemSeparator/>
+
+            <!-- Category Header -->
+            <NavigationViewItemHeader Content="Categories"
+                                      FontWeight="{ThemeResource ComboBoxHeaderThemeFontWeight}"
+                                      FontStyle="Normal"
+                                      FontSize="12"/>
+
+            <!-- System -->
+            <NavigationViewItem Content="System" Tag="system">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE770;" />
+                    <!-- Display icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Devices -->
+            <NavigationViewItem Content="Devices" Tag="devices">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE8B8;" />
+                    <!-- Devices icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Network & Internet -->
+            <NavigationViewItem Content="Network &amp; Internet" Tag="network">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE701;" />
+                    <!-- World icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Personalization -->
+            <NavigationViewItem Content="Personalization" Tag="personalization">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE771;" />
+                    <!-- Paintbrush icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Apps -->
+            <NavigationViewItem Content="Apps &amp; Tools" Tag="apps">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE71D;" />
+                    <!-- App icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Accounts -->
+            <NavigationViewItem Content="Accounts" Tag="accounts">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE77B;" />
+                    <!-- Contact icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Time & Language -->
+            <NavigationViewItem Content="Time &amp; Language" Tag="time">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE823;" />
+                    <!-- Clock icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Gaming -->
+            <NavigationViewItem Content="Gaming" Tag="gaming">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE7FC;" />
+                    <!-- Game controller icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!-- Update & Security -->
+            <NavigationViewItem Content="Update &amp; Security" Tag="update">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE895;" />
+                    <!-- Sync icon -->
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
+
+        <!-- Search Box -->
+        <NavigationView.AutoSuggestBox>
+            <AutoSuggestBox x:ConnectionId='3' x:Name="SuggestBox" PlaceholderText="Search..." QueryIcon="Find"/>
+        </NavigationView.AutoSuggestBox>
+
+        <!-- Header -->
+        <NavigationView.HeaderTemplate>
+            <DataTemplate>
+                <Grid Margin="24,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Welcome to Settings UI"
+                               FontSize="28"
+                               Style="{StaticResource TitleTextBlockStyle}"/>
+                </Grid>
+            </DataTemplate>
+        </NavigationView.HeaderTemplate>
+
+        <!-- Frame for content -->
+        <Frame x:ConnectionId='5' x:Name="ContentFrame" Margin="6">
+            <Frame.ContentTransitions>
+                <TransitionCollection>
+                    <NavigationThemeTransition/>
+                </TransitionCollection>
+            </Frame.ContentTransitions>
+        </Frame>
+    </NavigationView>
+</Page>
+

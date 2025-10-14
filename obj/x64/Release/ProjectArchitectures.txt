@@ -1,0 +1,1 @@
+C:\Users\youpr\Desktop\test.UWP\test.UWP\test.UWP.csproj;x64

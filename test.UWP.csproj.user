@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AppIconSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</AppIconSource>
+    <Source>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</Source>
+    <SmallTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</SmallTileSource>
+    <MediumTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</MediumTileSource>
+    <WideTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</WideTileSource>
+    <LargeTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</LargeTileSource>
+    <SplashScreenSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</SplashScreenSource>
+    <PackageLogoSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</PackageLogoSource>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <BackgroundTaskDebugEngines>
+    </BackgroundTaskDebugEngines>
+    <RemoteDebugMachine>Youne</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+  </PropertyGroup>
+</Project>
