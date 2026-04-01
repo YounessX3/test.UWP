@@ -1,1 +1,1 @@
-C:\Users\youpr\Videos\test.UWP_1.2.2.0_x64_Test\test.UWP_1.2.2.0_x64.msix
+C:\Users\youpr\3D Objects\uwp\my apps\test.UWP_1.2.2.0_x64_Test\test.UWP_1.2.2.0_x64.msix

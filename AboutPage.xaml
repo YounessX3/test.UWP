@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="test.UWP.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="#121212">
+
+    <ScrollViewer Padding="20" Background="Black">
+        <StackPanel>
+            <TextBlock Text="About This App" FontSize="30" Foreground="White" Margin="0,0,0,20"/>
+            <TextBlock Text="App Version: 1.0.2.0" Foreground="LightGray" Margin="0,0,0,10" SelectionChanged="TextBlock_SelectionChanged"/>
+            <TextBlock Text="Built with by YounessDev5." Foreground="LightGray" Margin="0,0,0,20"/>
+            <Button Content="Licenses" Margin="0,0,0,10" Click="LicensesButton_Click"/>
+            <Button Content="Contact Support" Margin="0,0,0,10"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

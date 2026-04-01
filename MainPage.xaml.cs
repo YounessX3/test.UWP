@@ -24,7 +24,8 @@ namespace test.UWP
             { "time", typeof(TimeLanguagePage) },
             { "gaming", typeof(GamingPage) },
             { "update", typeof(UpdateSecurityPage) },
-            { "settings", typeof(SettingsPage) }
+            { "settings", typeof(SettingsPage) },
+            { "my-content", typeof(MyContent) } // ✅ Added MyContent page
         };
 
         private List<string> Suggestions = new List<string>
@@ -49,10 +50,7 @@ namespace test.UWP
         {
             this.InitializeComponent();
 
-            // Apply title bar colors based on theme at startup
             ApplyTitleBarButtonColors();
-
-            // Update title bar colors if the theme changes while app is running
             this.ActualThemeChanged += MainPage_ActualThemeChanged;
 
             SuggestBox.TextChanged += SuggestBox_TextChanged;
@@ -67,38 +65,21 @@ namespace test.UWP
         private void ApplyTitleBarButtonColors()
         {
             var titleBar = ApplicationView.GetForCurrentView().TitleBar;
-
             bool isDark = this.ActualTheme == ElementTheme.Dark;
 
-            Color backgroundColor = isDark
-                ? Colors.Black
-                : Colors.White;
-
-            Color foregroundColor = isDark
-                ? Colors.White
-                : Colors.Black;
-
-            // Slightly lighter/darker variations for hover and pressed states
-            Color hoverBackgroundColor = isDark
-                ? Color.FromArgb(255, 30, 30, 30)    // dark gray for dark mode hover
-                : Color.FromArgb(255, 220, 220, 220); // light gray for light mode hover
-
-            Color pressedBackgroundColor = isDark
-                ? Color.FromArgb(255, 10, 10, 10)    // darker gray for dark mode pressed
-                : Color.FromArgb(255, 200, 200, 200); // slightly darker light gray for pressed
-
+            Color backgroundColor = isDark ? Colors.Black : Colors.White;
+            Color foregroundColor = isDark ? Colors.White : Colors.Black;
+            Color hoverBackgroundColor = isDark ? Color.FromArgb(255, 30, 30, 30) : Color.FromArgb(255, 220, 220, 220);
+            Color pressedBackgroundColor = isDark ? Color.FromArgb(255, 10, 10, 10) : Color.FromArgb(255, 200, 200, 200);
             Color inactiveBackgroundColor = backgroundColor;
             Color inactiveForegroundColor = isDark ? Colors.Gray : Colors.DarkGray;
 
             titleBar.ButtonBackgroundColor = backgroundColor;
             titleBar.ButtonForegroundColor = foregroundColor;
-
             titleBar.ButtonHoverBackgroundColor = hoverBackgroundColor;
             titleBar.ButtonHoverForegroundColor = foregroundColor;
-
             titleBar.ButtonPressedBackgroundColor = pressedBackgroundColor;
             titleBar.ButtonPressedForegroundColor = foregroundColor;
-
             titleBar.ButtonInactiveBackgroundColor = inactiveBackgroundColor;
             titleBar.ButtonInactiveForegroundColor = inactiveForegroundColor;
         }
@@ -110,16 +91,25 @@ namespace test.UWP
             string navParam = e.Parameter as string;
             if (!string.IsNullOrEmpty(navParam))
             {
-                var item = GetNavigationViewItem(navParam);
-                if (item != null)
+                if (navParam == "settings")
                 {
-                    NavView.SelectedItem = item;
-                    NavView_Navigate(navParam);
+                    NavView.SelectedItem = NavView.SettingsItem;
+                    ContentFrame.Navigate(typeof(SettingsPage));
                     hasNavigatedOnLoad = true;
                 }
                 else
                 {
-                    NavigateToHomeDefault();
+                    var item = GetNavigationViewItem(navParam);
+                    if (item != null)
+                    {
+                        NavView.SelectedItem = item;
+                        NavView_Navigate(navParam);
+                        hasNavigatedOnLoad = true;
+                    }
+                    else
+                    {
+                        NavigateToHomeDefault();
+                    }
                 }
             }
             else
@@ -127,7 +117,6 @@ namespace test.UWP
                 NavigateToHomeDefault();
             }
         }
-
         private void NavigateToHomeDefault()
         {
             var defaultItem = GetNavigationViewItem("home");
@@ -162,7 +151,7 @@ namespace test.UWP
             ContentFrame.Navigated += On_Navigated;
         }
 
-        private async void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             if (args.IsSettingsInvoked)
             {
@@ -171,19 +160,6 @@ namespace test.UWP
             else if (args.InvokedItemContainer != null)
             {
                 var tag = args.InvokedItemContainer.Tag?.ToString();
-
-                if (tag == "my-content")
-                {
-                    var dialog = new ContentDialog
-                    {
-                        Title = "Info",
-                        Content = "Sorry, still working on it...",
-                        CloseButtonText = "OK"
-                    };
-
-                    await dialog.ShowAsync();
-                    return;
-                }
 
                 if (tag == "home")
                 {
@@ -257,7 +233,6 @@ namespace test.UWP
             string selected = args.QueryText.ToLowerInvariant();
 
             if (selected.Contains("system")) NavView_Navigate("apps");
-            else if (selected.Contains("system")) NavView_Navigate("system");
             else if (selected.Contains("device")) NavView_Navigate("devices");
             else if (selected.Contains("network")) NavView_Navigate("network");
             else if (selected.Contains("personal")) NavView_Navigate("personalization");

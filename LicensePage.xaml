@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="test.UWP.LicensePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="#121212">
+
+    <Grid Padding="20" Background="Black">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="Microsoft License" FontSize="30" Foreground="White" Margin="0,0,0,20"/>
+                <Button Content="Back" HorizontalAlignment="Left" Margin="0,20,0,0" Click="BackButton_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock HorizontalAlignment="Left" Margin="153,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="738" Width="1128" SelectionChanged="TextBlock_SelectionChanged_1" FontSize="10" RequestedTheme="Dark" Text="Last updated June 2021"/>
+    </Grid>
+</Page>

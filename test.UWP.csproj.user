@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <AppIconSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</AppIconSource>
-    <Source>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</Source>
-    <SmallTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</SmallTileSource>
-    <MediumTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</MediumTileSource>
-    <WideTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</WideTileSource>
-    <LargeTileSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</LargeTileSource>
-    <SplashScreenSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</SplashScreenSource>
-    <PackageLogoSource>C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.11.13404.0_x64__8wekyb3d8bbwe\Assets\AppPackageAppList.targetsize-256_altform-unplated.png</PackageLogoSource>
+    <AppIconSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</AppIconSource>
+    <Source>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</Source>
+    <SmallTileSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</SmallTileSource>
+    <MediumTileSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</MediumTileSource>
+    <WideTileSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</WideTileSource>
+    <LargeTileSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</LargeTileSource>
+    <SplashScreenSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\youpr\source\repos\App6\App6\Assets\Square150x150Logo.scale-200.png</PackageLogoSource>
     <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
@@ -20,5 +20,9 @@
     </BackgroundTaskDebugEngines>
     <RemoteDebugMachine>Youne</RemoteDebugMachine>
     <AuthenticationMode>Universal</AuthenticationMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
   </PropertyGroup>
 </Project>

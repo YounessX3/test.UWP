@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LENOVOCX12018</Machine>
+    <Machine>SURFACELAPTOP3</Machine>
     <WindowsUser>youpr</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -9,8 +9,8 @@
     <SolutionConfiguration>Release|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>d067ccca-7865-4512-b402-caf1ed28f2b9</PackageIdentityName>
-    <PackageIdentityPublisher>CN=YounessDev5</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\youpr\Desktop\test.UWP\test.UWP\obj\x64\Release\</IntermediateOutputPath>
+    <PackageIdentityPublisher>CN=youpr</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\obj\x64\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,295 +18,75 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>04208307A84847658516576DE746AB22D9CEFDCC21046CBB9171585174100960</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>d067ccca-7865-4512-b402-caf1ed28f2b9_1.2.2.0_x64__3e9tmtsmg6hxg</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>d067ccca-7865-4512-b402-caf1ed28f2b9_3e9tmtsmg6hxg!App</RegisteredUserModeAppID>
+    <LayoutDir>C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>7E985E5118A305F1F742C5CCFAF58BC388730EAB3D0184D02AA4D11CF6CEF0A4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>d067ccca-7865-4512-b402-caf1ed28f2b9_1.2.2.0_x64__1p003jjdw5hbp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>d067ccca-7865-4512-b402-caf1ed28f2b9_1p003jjdw5hbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>d067ccca-7865-4512-b402-caf1ed28f2b9</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=YounessDev5</RegisteredPackagePublisher>
+    <RegisteredPackagePublisher>CN=youpr</RegisteredPackagePublisher>
     <RegisteredVersion>1.2.2.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-21T23:32:46.733</Modified>
+      <Modified>2026-04-01T15:17:47.323</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LargeTile.scale-100.png">
-      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.310</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LargeTile.scale-125.png">
-      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.348</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LargeTile.scale-150.png">
-      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.397</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LargeTile.scale-200.png">
-      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.475</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LargeTile.scale-400.png">
-      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.733</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2025-07-16T23:36:14.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SmallTile.scale-100.png">
-      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.657</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SmallTile.scale-125.png">
-      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.691</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SmallTile.scale-150.png">
-      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.712</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SmallTile.scale-200.png">
-      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SmallTile.scale-400.png">
-      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.762</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SplashScreen.scale-100.png">
-      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.453</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SplashScreen.scale-125.png">
-      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.511</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SplashScreen.scale-150.png">
-      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.585</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.704</Modified>
+      <Modified>2025-07-16T23:36:14.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\SplashScreen.scale-400.png">
-      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:13.125</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-100.png">
-      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.783</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-125.png">
-      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.805</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-150.png">
-      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.832</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.879</Modified>
+      <Modified>2025-07-16T23:36:14.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-400.png">
-      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:10.992</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.216</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.250</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.410</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.281</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.313</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.058</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.187</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.112</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.141</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-100.png">
-      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.753</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-125.png">
-      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.772</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-150.png">
-      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.801</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.832</Modified>
+      <Modified>2025-07-16T23:36:14.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-400.png">
-      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.871</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.902</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.933</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.085</Modified>
+      <Modified>2025-07-16T23:36:14.919</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:12.031</Modified>
+      <Modified>2025-07-16T23:36:14.920</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.962</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.989</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\StoreLogo.scale-100.png">
-      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:13.142</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\StoreLogo.scale-125.png">
-      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:13.161</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\StoreLogo.scale-150.png">
-      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:13.179</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\StoreLogo.scale-200.png">
-      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:13.198</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\StoreLogo.scale-400.png">
-      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:13.225</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.025</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.065</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.109</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.157</Modified>
+      <Modified>2025-07-16T23:36:14.921</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-17T04:16:11.278</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
       <Modified>2021-02-05T00:15:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-07-21T23:32:32.099</Modified>
+      <Modified>2026-04-01T15:17:07.657</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\test.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\test.UWP.dll">
       <PackagePath>test.UWP.dll</PackagePath>
-      <Modified>2025-07-21T23:32:46.565</Modified>
+      <Modified>2026-04-01T15:17:46.679</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\test.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\test.UWP.exe">
       <PackagePath>test.UWP.exe</PackagePath>
-      <Modified>2025-07-21T23:32:46.723</Modified>
+      <Modified>2026-04-01T15:17:47.306</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\youpr\Desktop\test.UWP\test.UWP\bin\x64\Release\ilc\test.UWP.pdb">
+    <AppxPackagedFile Include="C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\bin\x64\Release\ilc\test.UWP.pdb">
       <PackagePath>test.UWP.pdb</PackagePath>
-      <Modified>2025-07-21T23:32:46.722</Modified>
+      <Modified>2026-04-01T15:17:47.305</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

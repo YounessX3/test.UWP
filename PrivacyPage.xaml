@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="test.UWP.PrivacyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="#121212">
+
+    <ScrollViewer Padding="20" Background="Black">
+        <StackPanel>
+            <TextBlock Text="Privacy Settings" FontSize="30" Foreground="White" Margin="0,0,0,20"/>
+            <TextBlock Text="Control what data your app can access." Foreground="LightGray" Margin="0,0,0,20"/>
+            <Button Content="Location Access" Margin="0,0,0,10" IsTabStop="True" />
+            <Button Content="Camera Permissions" Margin="0,0,0,10" IsTabStop="True" />
+            <Button Content="Microphone Permissions" Margin="0,0,0,10" IsTabStop="True" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

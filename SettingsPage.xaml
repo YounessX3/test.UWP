@@ -8,25 +8,104 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <ScrollViewer>
-        <StackPanel Padding="20" Spacing="24">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Padding="20" Spacing="24" x:Name="MainStack">
 
             <TextBlock Text="Settings" FontSize="32" FontWeight="SemiBold" />
 
+            <!-- Chicken Mode -->
             <StackPanel>
-                <TextBlock Text="Theme" FontSize="18" Margin="0,0,0,8"/>
-                <ComboBox x:Name="ThemeComboBox" Width="200" SelectionChanged="ThemeComboBox_SelectionChanged">
-                    <ComboBoxItem Content="System Default" IsSelected="True"/>
-                    <ComboBoxItem Content="Light"/>
-                    <ComboBoxItem Content="Dark"/>
+                <TextBlock Text="Enable Chicken Mode" FontSize="18" Margin="0,0,0,4"/>
+                <ToggleSwitch x:Name="ChickenModeToggle" OffContent="Off" OnContent="Cluck!" Toggled="ChickenModeToggle_Toggled"/>
+            </StackPanel>
+
+            <!-- Scream Volume -->
+            <StackPanel>
+                <TextBlock Text="Volume of Screams" FontSize="18" Margin="0,20,0,4"/>
+                <Slider x:Name="ScreamVolumeSlider" Minimum="0" Maximum="100" Value="50" Width="480" HorizontalAlignment="Left" ValueChanged="ScreamVolumeSlider_ValueChanged"/>
+                <TextBlock x:Name="ScreamVolumeValue" Text="Volume: 50%" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <!-- Explosion Frequency -->
+            <StackPanel>
+                <TextBlock Text="Explosion Frequency" FontSize="18" Margin="0,20,0,4"/>
+                <ComboBox x:Name="ExplosionFrequencyComboBox" Width="200" SelectionChanged="ExplosionFrequencyComboBox_SelectionChanged">
+                    <ComboBoxItem Content="None" IsSelected="True"/>
+                    <ComboBoxItem Content="Occasional"/>
+                    <ComboBoxItem Content="Frequent"/>
+                    <ComboBoxItem Content="Unstable"/>
                 </ComboBox>
             </StackPanel>
 
+            <!-- Auto-Yeet -->
             <StackPanel>
-                <TextBlock Text="App Version" FontSize="18" Margin="0,20,0,4"/>
+                <TextBlock Text="Auto-Yeet Files" FontSize="18" Margin="0,20,0,4"/>
+                <ToggleSwitch x:Name="AutoYeetToggle" OffContent="Disabled" OnContent="Enabled" Toggled="AutoYeetToggle_Toggled"/>
+            </StackPanel>
+
+            <!-- Meme Format -->
+            <StackPanel>
+                <TextBlock Text="Favorite Meme Format" FontSize="18" Margin="0,20,0,4"/>
+                <ComboBox x:Name="MemeFormatComboBox" Width="200" SelectionChanged="MemeFormatComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Drake Format" IsSelected="True"/>
+                    <ComboBoxItem Content="Distracted Boyfriend"/>
+                    <ComboBoxItem Content="Woman Yelling at Cat"/>
+                    <ComboBoxItem Content="Galaxy Brain"/>
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Banana Mode -->
+            <StackPanel>
+                <TextBlock Text="Enable Banana Mode" FontSize="18" Margin="0,20,0,4"/>
+                <ToggleSwitch x:Name="BananaToggle" Toggled="BananaToggle_Toggled" OffContent="Off" OnContent="Banana!"/>
+            </StackPanel>
+
+            <!-- Scream Button -->
+            <StackPanel>
+                <TextBlock Text="Emergency Scream" FontSize="18" Margin="0,20,0,4"/>
+                <Button Content="AAAAH!" Click="ScreamButton_Click"/>
+            </StackPanel>
+
+            <!-- Confetti Slider -->
+            <StackPanel>
+                <TextBlock Text="Confetti Amount" FontSize="18" Margin="0,20,0,4"/>
+                <Slider x:Name="ConfettiSlider" Minimum="0" Maximum="100" Value="20" Width="480" HorizontalAlignment="Left" ValueChanged="ConfettiSlider_ValueChanged"/>
+                <TextBlock x:Name="ConfettiText" Text="20% Confetti" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <!-- Easter Egg Toggle -->
+            <StackPanel>
+                <TextBlock Text="Easter Egg" FontSize="18" Margin="0,20,0,4"/>
+                <ToggleSwitch x:Name="EasterEggToggle" Toggled="EasterEggToggle_Toggled" OffContent="Hidden" OnContent="Show"/>
+                <TextBlock x:Name="EasterEggText" Text="You've found the sacred banana! 🍌" Visibility="Collapsed" FontStyle="Italic" FontSize="16"/>
+            </StackPanel>
+
+            <!-- Random Button -->
+            <StackPanel>
+                <TextBlock Text="Randomize a Button Label" FontSize="18" Margin="0,20,0,4"/>
+                <Button x:Name="RandomTextButton" Content="Randomize Me" Click="RandomTextButton_Click"/>
+            </StackPanel>
+
+            <!-- Fetch Joke -->
+            <StackPanel>
+                <TextBlock Text="Fetch a Random Joke" FontSize="18" Margin="0,20,0,4"/>
+                <Button Content="Tell Me a Joke" Click="FetchJokeButton_Click"/>
+                <TextBlock x:Name="JokeTextBlock" Text="Joke will appear here..." Margin="0,4,0,0" TextWrapping="WrapWholeWords"/>
+            </StackPanel>
+
+            <!-- Internet Status -->
+            <StackPanel>
+                <TextBlock Text="Internet Connection Status (tap to refresh)" FontSize="18" Margin="0,20,0,4"/>
+                <TextBlock x:Name="InternetStatusText" Text="Checking..." Margin="0,4,0,0" Tapped="InternetStatusText_Tapped"/>
+            </StackPanel>
+
+            <!-- App Version -->
+            <StackPanel>
+                <TextBlock Text="App Version" FontSize="18" Margin="0,30,0,4"/>
                 <TextBlock x:Name="AppVersionTextBlock" FontSize="16" Foreground="Gray"/>
             </StackPanel>
 
         </StackPanel>
     </ScrollViewer>
 </Page>
+    

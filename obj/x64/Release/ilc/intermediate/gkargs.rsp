@@ -1,7 +1,7 @@
-﻿"C:\Users\youpr\Desktop\test.UWP\test.UWP\obj\x64\Release\ilc\in\test.UWP.exe"
-/Lib:"C:\Users\youpr\Desktop\test.UWP\test.UWP\obj\x64\Release\ilc\in"
+﻿"C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\obj\x64\Release\ilc\in\test.UWP.exe"
+/Lib:"C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\obj\x64\Release\ilc\in"
 /Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\x64\ilc\lib\Private"
-/WinMD:"C:\Users\youpr\Desktop\test.UWP\test.UWP\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"d8b2e183-d8e2-4011-bbd1-b53e8e85f7e3\",\"Id\":\"731febc7-24f2-4d97-aedd-115470a025d5\",\"ProcessStartTime\":638887372706477668}"
+/WinMD:"C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"df1b6e40-2fd7-45fe-99b9-13e53f5179de\",\"Id\":\"e9bb46bc-d88c-407b-a059-5647c2228550\",\"ProcessStartTime\":639106532936275168}"
 /RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\LibraryXML"
 /RunOnlyPreDR

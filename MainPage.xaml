@@ -42,6 +42,8 @@
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
+
+
             <NavigationViewItemSeparator/>
 
             <!-- Category Header -->
@@ -54,7 +56,6 @@
             <NavigationViewItem Content="System" Tag="system">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE770;" />
-                    <!-- Display icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -62,7 +63,6 @@
             <NavigationViewItem Content="Devices" Tag="devices">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE8B8;" />
-                    <!-- Devices icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -70,7 +70,6 @@
             <NavigationViewItem Content="Network &amp; Internet" Tag="network">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE701;" />
-                    <!-- World icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -78,7 +77,6 @@
             <NavigationViewItem Content="Personalization" Tag="personalization">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE771;" />
-                    <!-- Paintbrush icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -86,7 +84,6 @@
             <NavigationViewItem Content="Apps &amp; Tools" Tag="apps">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE71D;" />
-                    <!-- App icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -94,7 +91,6 @@
             <NavigationViewItem Content="Accounts" Tag="accounts">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE77B;" />
-                    <!-- Contact icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -102,7 +98,6 @@
             <NavigationViewItem Content="Time &amp; Language" Tag="time">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE823;" />
-                    <!-- Clock icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -110,7 +105,6 @@
             <NavigationViewItem Content="Gaming" Tag="gaming">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE7FC;" />
-                    <!-- Game controller icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
@@ -118,7 +112,6 @@
             <NavigationViewItem Content="Update &amp; Security" Tag="update">
                 <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE895;" />
-                    <!-- Sync icon -->
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
         </NavigationView.MenuItems>

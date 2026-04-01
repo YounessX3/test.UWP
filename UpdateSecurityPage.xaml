@@ -5,57 +5,109 @@
     xmlns:local="using:test.UWP"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <ScrollViewer Padding="36">
-        <StackPanel Spacing="36">
+    <Grid>
 
-            <!-- Title -->
-            <TextBlock Text="Windows Update"
-                       FontSize="36"
-                       FontWeight="SemiBold" />
+        <!-- Top progress bar -->
+        <ProgressBar x:Name="TopProgressBar"
+                     IsIndeterminate="True"
+                     Visibility="Collapsed"
+                     Height="4"
+                     Foreground="{ThemeResource SystemControlHighlightAccentBrush}"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Top"/>
 
-            <!-- Steps Progress Bar -->
-            <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
-                <FontIcon Glyph="&#xE73E;" FontSize="18" Foreground="Green"/>
-                <Rectangle Height="2" Width="32" Fill="Gray" VerticalAlignment="Center"/>
-                <FontIcon Glyph="&#xE9EA;" FontSize="18" Foreground="Gray"/>
-                <Rectangle Height="2" Width="32" Fill="Gray" VerticalAlignment="Center"/>
-                <FontIcon Glyph="&#xEBC3;" FontSize="18" Foreground="Gray"/>
-                <Rectangle Height="2" Width="32" Fill="Gray" VerticalAlignment="Center"/>
-                <FontIcon Glyph="&#xE896;" FontSize="18" Foreground="Gray"/>
-            </StackPanel>
+        <ScrollViewer Padding="36">
+            <StackPanel Spacing="36">
 
-            <!-- Check for updates Button -->
-            <Button Content="Check for updates"
-                    Width="220"
-                    Height="48"
-                    Click="CheckUpdates_Click"
-                    HorizontalAlignment="Left"
-                    CornerRadius="0" />
-
-            <!-- Status Text -->
-            <StackPanel Spacing="4">
-                <TextBlock x:Name="StatusTextBlock"
-                           Text="You're up to date."
-                           FontSize="18"
+                <!-- Title -->
+                <TextBlock Text="Windows Update"
+                           FontSize="36"
                            FontWeight="SemiBold" />
-                <TextBlock x:Name="LastCheckedTextBlock"
-                           Text="Last checked: Today at 06:15"
-                           FontSize="14"
-                           Foreground="Gray"/>
-            </StackPanel>
 
-            <!-- Optional Downloads Placeholder -->
-            <Border BorderBrush="Gray" BorderThickness="1" Padding="12" CornerRadius="0" Background="#11FFFFFF">
-                <StackPanel>
-                    <TextBlock Text="Optional Updates Available"
-                               FontSize="16"
-                               FontWeight="SemiBold"/>
-                    <TextBlock Text="Driver update for Generic Display Adapter"
-                               Foreground="Gray" Margin="0,4,0,0"/>
-                    <Button Content="Download and install" Width="180" Margin="0,8,0,0" CornerRadius="0"/>
+                <!-- Steps Progress Bar -->
+                <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+                    <FontIcon x:Name="StepIcon1" Glyph="&#xE73E;" FontSize="18" Foreground="Gray"/>
+                    <Rectangle x:Name="StepLine1" Height="2" Width="32" Fill="Gray" VerticalAlignment="Center"/>
+                    <FontIcon x:Name="StepIcon2" Glyph="&#xE895;" FontSize="18" Foreground="Gray"/>
+                    <Rectangle x:Name="StepLine2" Height="2" Width="32" Fill="Gray" VerticalAlignment="Center"/>
+                    <FontIcon x:Name="StepIcon3" Glyph="&#xEBC3;" FontSize="18" Foreground="Gray"/>
+                    <Rectangle x:Name="StepLine3" Height="2" Width="32" Fill="Gray" VerticalAlignment="Center"/>
+                    <FontIcon x:Name="StepIcon4" Glyph="&#xE896;" FontSize="18" Foreground="Gray"/>
                 </StackPanel>
-            </Border>
 
-        </StackPanel>
-    </ScrollViewer>
+                <!-- Check for updates Button -->
+                <Button Content="Check for updates"
+                        Width="220"
+                        Height="48"
+                        Click="CheckUpdates_Click"
+                        HorizontalAlignment="Left"
+                        CornerRadius="0" />
+
+                <!-- Container for dynamic updates list -->
+                <StackPanel x:Name="UpdatesListContainer" Visibility="Collapsed" Margin="0,24,0,0">
+                    <TextBlock Text="Downloading Updates"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Margin="0,0,0,12"/>
+                    <ListView x:Name="UpdatesListView" Height="300">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Spacing="8" Margin="0,0,0,16">
+                                    <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding Name}" Width="250" FontSize="16"/>
+                                        <TextBlock Text="{Binding DownloadSpeed}" Width="100" FontSize="14" Foreground="Gray"/>
+                                        <TextBlock Text="{Binding ProgressPercent}" Width="60" FontSize="14" FontWeight="SemiBold"/>
+                                    </StackPanel>
+                                    <ProgressBar Value="{Binding Progress}" Minimum="0" Maximum="100" Height="6"
+                                                 Foreground="{ThemeResource SystemControlHighlightAccentBrush}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+
+                <!-- Status Text -->
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="StatusTextBlock"
+                               Text="You're up to date."
+                               FontSize="18"
+                               FontWeight="SemiBold" />
+                    <TextBlock x:Name="LastCheckedTextBlock"
+                               Text="Last checked: Today at 06:15"
+                               FontSize="14"
+                               Foreground="Gray"/>
+                </StackPanel>
+
+                <!-- Loading Ring -->
+                <ProgressRing x:Name="UpdateProgressRing"
+                              Width="40"
+                              Height="40"
+                              IsActive="False"
+                              Visibility="Collapsed"
+                              HorizontalAlignment="Left"
+                              Margin="0,12,0,0"/>
+
+                <!-- Optional Downloads Placeholder -->
+                <Border BorderBrush="Gray"
+                        BorderThickness="1"
+                        Padding="12"
+                        CornerRadius="0"
+                        Background="#11FFFFFF">
+                    <StackPanel>
+                        <TextBlock Text="Optional Updates Available"
+                                   FontSize="16"
+                                   FontWeight="SemiBold"/>
+                        <TextBlock Text="Driver update for Generic Display Adapter"
+                                   Foreground="Gray" Margin="0,4,0,0"/>
+                        <Button Content="Download and install"
+                                Width="180"
+                                Margin="0,8,0,0"
+                                CornerRadius="0"
+                                Click="DownloadAndInstall_Click"/>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
 </Page>

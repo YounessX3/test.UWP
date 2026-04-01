@@ -1,1 +1,1 @@
-C:\Users\youpr\Desktop\test.UWP\test.UWP\test.UWP.csproj;x64
+C:\Users\youpr\Documents\Visual Studio 2019\Projects\test.UWP\test.UWP\test.UWP.csproj;x64

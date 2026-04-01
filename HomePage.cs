@@ -93,7 +93,6 @@ namespace test.UWP
             // Adjust hover and pressed colors similarly...
         }
 
-
         private void SetButtonsBackground()
         {
             Brush backgroundBrush = this.ActualTheme == ElementTheme.Dark
@@ -209,6 +208,13 @@ namespace test.UWP
             }
 
             sender.ItemsSource = null;
+        }
+
+        // NEW: Settings button click handler
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = Window.Current.Content as Frame;
+            rootFrame?.Navigate(typeof(MainPage), "settings");
         }
     }
 }

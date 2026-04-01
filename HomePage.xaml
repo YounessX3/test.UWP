@@ -604,15 +604,23 @@
         </Grid.RowDefinitions>
 
         <!-- Search box centered at the top -->
-        <Border Background="{ThemeResource HomeSearchBackgroundBrush}" Padding="0,10" Grid.Row="0">
-            <AutoSuggestBox
-        x:Name="SuggestBox"
-        PlaceholderText="Search..."
-        QueryIcon="Find"
-        HorizontalAlignment="Center"
-        Margin="0,10"
-        Width="300"/>
-        </Border>
+		 <Border Background="{ThemeResource HomeSearchBackgroundBrush}" Padding="0,10" Grid.Row="0">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+				<!-- Search box -->
+				<AutoSuggestBox
+					x:Name="SuggestBox"
+					PlaceholderText="Search..."
+					QueryIcon="Find"
+					Width="300"/>
+
+				<!-- Settings gear button -->
+                <Button Click="SettingsButton_Click"
+                        Style="{ThemeResource ButtonRevealStyle}"
+                        Margin="10,0,0,0">
+                    <SymbolIcon Symbol="Setting"/>
+                </Button>
+            </StackPanel>
+		</Border>
 
         <Border Background="{ThemeResource HomeSearchBackgroundBrush}" Padding="36,10,0,10" Grid.Row="1">
             <TextBlock

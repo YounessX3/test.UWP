@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\youpr\\Desktop\\test.UWP\\test.UWP\\test.UWP.csproj": {}
+    "C:\\Users\\youpr\\Documents\\Visual Studio 2019\\Projects\\test.UWP\\test.UWP\\test.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\youpr\\Desktop\\test.UWP\\test.UWP\\test.UWP.csproj": {
+    "C:\\Users\\youpr\\Documents\\Visual Studio 2019\\Projects\\test.UWP\\test.UWP\\test.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youpr\\Desktop\\test.UWP\\test.UWP\\test.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\youpr\\Documents\\Visual Studio 2019\\Projects\\test.UWP\\test.UWP\\test.UWP.csproj",
         "projectName": "test.UWP",
-        "projectPath": "C:\\Users\\youpr\\Desktop\\test.UWP\\test.UWP\\test.UWP.csproj",
+        "projectPath": "C:\\Users\\youpr\\Documents\\Visual Studio 2019\\Projects\\test.UWP\\test.UWP\\test.UWP.csproj",
         "packagesPath": "C:\\Users\\youpr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youpr\\Desktop\\test.UWP\\test.UWP\\obj\\",
+        "outputPath": "C:\\Users\\youpr\\Documents\\Visual Studio 2019\\Projects\\test.UWP\\test.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
